@@ -185,6 +185,26 @@ while run:
                 if zanovo_rect.collidepoint(mouse_pos):
                     mony = 0
                     m_of = True
+                    win = False
+
+                    bro_rect.y = 180
+                    bro_rect.x = 210
+
+                    bro2_rect.y = 180
+                    bro2_rect.x = 210
+
+                    monetky_hitbox_1 = True
+                    monetky_hitbox_2 = True
+                    monetky_hitbox_3 = True
+                    monetky_hitbox_4 = True
+                    monetky_hitbox_5 = True
+
+                    monetky_mojno_1 = True
+                    monetky_mojno_2 = True
+                    monetky_mojno_3 = True
+                    monetky_mojno_4 = True
+                    monetky_mojno_5 = True
+
                     pygame.mixer.music.play(-1)
             if exit33:
                 if exit3_rect.collidepoint(mouse_pos):
@@ -464,6 +484,7 @@ while run:
         if mony >= 5:
             win = True
             pobeda_sound.play()
+            pygame.mixer.music.pause()
     if mony >= 5:
         zanovo_f = True
         m_of = False
